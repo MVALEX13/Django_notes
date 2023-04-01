@@ -1,0 +1,14 @@
+<!-- we use the layout.html template -->
+<!-- works like the #include ... in C , it somewath paste all the content of the layout.html decument in this file-->
+<!-- note that we just have to specify the path from the templates/ dir given that with Django all the html files are supposed in the templates/ folder-->
+{% extends "application1/layout.html" %}
+
+<!-- we customise the section1 -->
+{% block section1 %}
+<p> application1 functionnality1 (section1)</p>
+{% endblock %}
+
+<!-- we customise the section2 -->
+{% block section2 %}
+<p> application1 functionnality1 (section2)</p>
+{% endblock %}
