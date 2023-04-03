@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>App2</title>
+    </head>
+    <body>
+        <!-- define the customisable part of the layout.html file -->
+        <!-- here the part has been called "section1"-->
+        <!-- note that with Django-python syntax within html document the "endblock" is required at the end of every statement -->
+        {% block section1 %}
+        {% endblock %}
+
+        <!-- we can create as many customisable sections as we want, here we create a second section called "section2"-->
+        {% block section2 %}
+        {% endblock %}
+    </body>
+</html>
