@@ -11,7 +11,7 @@ i) create a virtual environnement, I'll call it "Web_env" : <br />
 `$ python3 -m venv Web_env`
 
 ii) active your virtual env <br />
-`$ source Web_env/bin/activate`
+`$ source ../Web_env/bin/activate`
 
 iii) install Django (if not installed yet) : <br />
 `$ pip install Django`
@@ -24,14 +24,18 @@ In my case it was : <br/>
 
 A folder named PROJECT_NAME (prj_discover_Django in my case) must have been created. If you click on it you shall see something like this :
 
-![project arborescence](/img/project_arborescence.jpg "project arborescence")
+![project arborescence](/img/project_arborescence_creation.png "project arborescence")
 
 Now that the project has been created we can run the server using the manage.py file created by Django. 
 Your computer we’ll play the role of the server.
 
 `$ python manage.py runserver`
 
-if you click on the shared url you should arrive on the following page. This is the default page that is showed when your project is being hosted but has nothing implemented yet. For the moment the server hosts a project that do nothing. Django manage the hosting part for us, but obviously it will be our job to describe what app we want. In fact a Django project is **a set of apps**.
+if you click on the shared url you should arrive on the following page.
+
+![django default page](/img/django_default.png "django default page") <br />
+
+ This is the default page that is showed when your project is being hosted but has nothing implemented yet. For the moment the server hosts a project that do nothing. Django manage the hosting part for us, but obviously it will be our job to describe what app we want. In fact a Django project is **a set of apps**.
 
 ### 3 - App creation
 To create a conform app we'll ask Django to create it for us using. We'll run the following command line : <br />
