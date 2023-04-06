@@ -1,0 +1,26 @@
+<!-- we use the layout.html template -->
+<!-- works like the #include ... in C , it somewath paste all the content of the layout.html decument in this file-->
+<!-- note that we just have to specify the path from the templates/ dir given that with Django all the html files are supposed in the templates/ folder-->
+{% extends "application1/layout.html" %}
+
+<!-- we customise the section1 -->
+{% block section1 %}
+<!-- l'action doit retourner le path de la page sur laquelle on veut se retrouver après avoir soumis le formulaire-->
+<form action="{% url 'application1:default' %}" method="post">
+
+    <!-- ajoute un champ au formulaire qui ajoute les lignes qui contiendraient normalement le token/cookie si on avait du nous même renter le code en dur-->
+    {% csrf_token %}
+
+    {{ form }}
+
+    <input type = "submit">
+</form>
+
+<!-- syntaxe used by Django to give a path url APP_NAME:ROUTE_NAME-->
+<a href = "{% url 'application1:default' %}"> back </a>
+{% endblock %}
+
+<!-- we customise the section2 -->
+{% block section2 %}
+<!-- nothing done here -->
+{% endblock %}

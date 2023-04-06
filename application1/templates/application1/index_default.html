@@ -4,6 +4,14 @@
         <title>App1</title>
     </head>
     <body>
+        <h2>Application 1 </h2>
         <p>Welcoming page of the Application 1</p>
+        <p>You are connected as : {{ username }} </p>
+        <p>This application offers the following functionnalities : </p>
+        
+        <a href="{% url 'application1:func1' %}"> - functionnality 1</a> <br/>
+        <a href="{% url 'application1:func2' %}"> - functionnality 2</a> <br/>
+        <a href="{% url 'application1:form' %}"> - form </a> <br/>
+
     </body>
 </html>

@@ -4,14 +4,14 @@ In this file, I'll explain, the big picture of how Django works.
 
 ### 1  - Configure a virtual environnement
 
-Personnaly I the same environnement for all of my Web project? it's located at the relative root "`../.`" from the project location.
+Personnaly I use the same environnement for all of my Web project? it's located at the relative root "`../.`" from the project location.
 
 To do so : <br />
 i) create a virtual environnement, I'll call it "Web_env" : <br /> 
 `$ python3 -m venv Web_env`
 
 ii) active your virtual env <br />
-`$ source ../Web_env/bin/activate`
+`$ source Web_env/bin/activate`
 
 iii) install Django (if not installed yet) : <br />
 `$ pip install Django`
